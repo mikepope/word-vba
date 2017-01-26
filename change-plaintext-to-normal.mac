@@ -1,0 +1,30 @@
+```
+Public Sub AutoOpen()
+' If this macros is in the Normal.dotm template, it runs anytime the user opens a new document.
+' It's intended for when the user enters a .txt (plain text) file. By default, Word styles everything
+' in the as Plain Text. This macro walks through all the paras in the file, and any that are styled
+' as Plain Text are restyled as Normal.
+'
+' The macro does this for files whose file name extension is .txt
+
+    Dim f As String
+    Dim ext As String
+    Dim index As Long
+    
+    ext = ""
+    f = ActiveDocument.Name
+    index = InStrRev(f, ".")
+    If index > 0 Then
+        ext = Mid(f, index)
+    End If
+    
+    If ext = ".txt" Then
+        Dim p As Paragraph
+        For Each p In ActiveDocument.Paragraphs
+            If p.Style = "Plain Text" Then
+                p.Style = "Normal"
+            End If
+        Next p
+    End If
+End Sub
+```
