@@ -1,0 +1,17 @@
+Sub ShowOrHideShowRevisions()
+' Toggles between displaying "All Markup" and "No Markup"
+
+    If ActiveWindow.View.RevisionsFilter.Markup = wdRevisionsMarkupNone Then
+        ' Hide revisions
+        With ActiveWindow.View.RevisionsFilter
+            .Markup = wdRevisionsMarkupAll
+            .View = wdRevisionsViewFinal
+        End With
+    Else
+        ' Show revisions
+        With ActiveWindow.View.RevisionsFilter
+            .Markup = wdRevisionsMarkupNone
+            .View = wdRevisionsViewFinal
+        End With
+    End If
+End Sub
