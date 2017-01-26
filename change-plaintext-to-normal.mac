@@ -1,4 +1,3 @@
-```
 Public Sub AutoOpen()
 ' If this macros is in the Normal.dotm template, it runs anytime the user opens a new document.
 ' It's intended for when the user enters a .txt (plain text) file. By default, Word styles everything
@@ -27,4 +26,3 @@ Public Sub AutoOpen()
         Next p
     End If
 End Sub
-```
