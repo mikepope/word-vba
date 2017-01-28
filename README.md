@@ -34,3 +34,11 @@ Here's a brief description of what's in this repo:
 
 >Turns on/off the feature in Word that converts straight quotes to curly quotes. Most useful when this has a keyboard shortcut assigned to it.
 
+
+### Managing the Styles pane
+**`set-styles-panel-to-all-alphabetical.mac`**
+
+>Changes the display in the Styles pane to a) show all styles in b) alphabetical order.
+
+
+
