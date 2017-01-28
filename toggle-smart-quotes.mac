@@ -1,0 +1,14 @@
+Sub ToggleSmartQuotes()
+' Turns on/off the feature in Word that converts straight quotes to curly quotes
+
+    Options.AutoFormatAsYouTypeReplaceQuotes = Not (Options.AutoFormatAsYouTypeReplaceQuotes)
+    
+    ' This part is optional if you want to see the status
+    Dim smStatus As String
+    smStatus = "Off"
+    If Options.AutoFormatAsYouTypeReplaceQuotes = True Then
+       smStatus = "On"
+    End If
+    
+    MsgBox ("Smart quotes are " + smStatus)
+End Sub
