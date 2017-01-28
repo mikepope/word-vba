@@ -1,0 +1,6 @@
+Sub SetStylesPaneToAllAlphabetical()
+' Changes the display in the Styles pane to a) show 
+' all styles b) in alphabetical order
+    ActiveDocument.FormattingShowFilter = wdShowFilterStylesAll
+    ActiveDocument.StyleSortMethod = wdStyleSortByName
+End Sub
