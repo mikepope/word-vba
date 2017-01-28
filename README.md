@@ -30,5 +30,7 @@ Here's a brief description of what's in this repo:
 > More info: [http://mikepope.com/blog/DisplayBlog.aspx?permalink=2407](http://mikepope.com/blog/DisplayBlog.aspx?permalink=2407)
 
 
+**`toggle-smart-quotes.mac`**
 
+>Turns on/off the feature in Word that converts straight quotes to curly quotes. Most useful when this has a keyboard shortcut assigned to it.
 
