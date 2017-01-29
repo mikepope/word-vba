@@ -1,0 +1,27 @@
+Sub ConvertLinks()
+    ' Converts Word links to HTML <a> elements.
+    ' Mike Pope
+    ' 2016-05-10
+    '---------------------------
+    ' TODO: Change this so it works against a selected range
+    ' TODO: Determine (automatically?) whether to include target="_blank"
+    ' TODO: Figure out if there's a better way to update the links than walking backwards through the collection. (Use the Selection object, maybe?)
+    '---------------------------
+    Dim hLink As Hyperlink
+    Dim hLinksCount As Long, i As Integer
+    Dim aElement As String
+    hLinksCount = ActiveDocument.Hyperlinks.Count
+    
+    ' Working backward, because as each link is converted, it is removed
+    ' from the Hyperlinks collection in the doc
+    For i = hLinksCount To 1 Step -1
+        Set hLink = ActiveDocument.Hyperlinks(i)
+        aElement = "<a target='_blank' "
+        aElement = aElement & "href='" & hLink.Address & "'"
+        aElement = aElement & " >"
+        aElement = aElement & hLink.TextToDisplay
+        aElement = aElement & "</a>"
+        hLink.Range = aElement
+    Next i
+    Set hLink = Nothing
+End Sub

@@ -41,4 +41,11 @@ Here's a brief description of what's in this repo:
 >Changes the display in the Styles pane to a) show all styles in b) alphabetical order.
 
 
+### HTML-related macros
+**`convert-all-links.mac`**
+
+>Walks through all Word hyperlinks and converts them to &lt;a&gt; elements (with `target="_blank"`).
+
+>An interesting feature of this macro is that it walks *backward* through the collection of links. The issue is that as each hyperlink is converted, it stops being a hyperlink and is thus removed from the collection. This confuses any code that is walking the collection.   
+
 
