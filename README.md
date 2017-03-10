@@ -49,3 +49,10 @@ Here's a brief description of what's in this repo:
 >An interesting feature of this macro is that it walks *backward* through the collection of links. The issue is that as each hyperlink is converted, it stops being a hyperlink and is thus removed from the collection. This confuses any code that is walking the collection.   
 
 
+**`make-bold.mac`
+
+
+>Adds `<b></b>` tags around the selected text.
+
+
+

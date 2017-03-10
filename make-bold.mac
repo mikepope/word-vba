@@ -1,0 +1,3 @@
+Sub MakeBold()
+    ActiveDocument.ActiveWindow.Selection = "<strong>" + ActiveDocument.ActiveWindow.Selection + "</strong>"
+End Sub
