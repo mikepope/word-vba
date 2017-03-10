@@ -1,0 +1,3 @@
+Sub MakeCode()
+    ActiveDocument.ActiveWindow.Selection = "<code>" + ActiveDocument.ActiveWindow.Selection + "</code>"
+End Sub

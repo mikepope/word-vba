@@ -55,4 +55,8 @@ Here's a brief description of what's in this repo:
 >Adds `<b></b>` tags around the selected text.
 
 
+**`make-code.mac`
+
+
+>Adds `<code></code>` tags around the selected text.
 
