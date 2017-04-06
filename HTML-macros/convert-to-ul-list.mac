@@ -1,0 +1,26 @@
+Sub ConvertToBulletedList()
+    Dim htmlList As String
+    Dim selectedText As String
+    Dim nextChar As String
+    selectedText = ActiveDocument.ActiveWindow.Selection
+    Dim i As Long
+    Dim stringLength As Long
+    stringLength = Len(selectedText)
+    ' Adjust string length if the last character is a CRLF
+    If Right(selectedText, 1) = vbCr Then
+        stringLength = stringLength - 1
+    End If
+    htmlList = "<ul>" & vbCrLf & "<li>"
+    For i = 1 To stringLength
+        nextChar = Mid(selectedText, i, 1)
+        If nextChar = vbCr Then
+            htmlList = htmlList & "</li>" & vbCrLf & "<li>"
+        ElseIf nextChar = vbLf Then
+            ' Skip
+        Else
+            htmlList = htmlList & nextChar
+        End If
+    Next i
+    htmlList = htmlList & "</li>" & vbCrLf & "</ul>" & vbCrLf
+    ActiveDocument.ActiveWindow.Selection.Range = htmlList
+End Sub
