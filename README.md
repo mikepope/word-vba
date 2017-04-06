@@ -50,7 +50,7 @@ Here's a brief description of what's in this repo:
 
 **`convert-to-ul-list.mac`**
 
->Converts the selected text to a `&lt;ul&gt;` list. Each paragraph becomes one list item.
+>Converts the selected text to a `<ul>` list. Each paragraph becomes one list item.
 
 
 **`make-bold.mac`**
