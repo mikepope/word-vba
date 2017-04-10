@@ -1,5 +1,7 @@
 # word-vba
-This repository contains macros written in Word VBA. Mike Pope is the host.
+This repository contains macros written in Word VBA. Mike Pope is the host. 
+
+There is currently a master branch and a word-vba-features branch.
 
 ## Versions of Word
 I use Word 2013 for Windows, but much of this applies to earlier versions of Word. Most of it probably applies to Word for the Mac, but I cannot guarantee that.
