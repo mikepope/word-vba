@@ -19,7 +19,7 @@ Here's a brief description of what's in this repo. The **.mac** extension is jus
 | Macro | Description |
 | --- | --- |
 | `change-plaintext-to-normal.mac`| Change plain text to **Normal** style. This was written in response to a query to on the Word-Pc list. If you open up a pure-text file in Word, Word formats the text in the file as the style named `Plain Text`. The poster wondered if there was a way to have Word instead show everythign in `Normal`. There might be a better way to do that, but this macro seems to do the trick. It relies on the fact that Word runs `AutoNew`, `AutoOpen`, and `AutoClose` macros if they exist when (respectively) you create, open, and close a document. |
-| `show-hide-revisions.mac`| > This macro toggles revision marks. In the language of the Word UI, it's the equivalent of the following: **Review (tab)** &gt; **Tracking** &gt; [**All Markup**|**No Markup**] More info: [http://mikepope.com/blog/DisplayBlog.aspx?permalink=2407](http://mikepope.com/blog/DisplayBlog.aspx?permalink=2407)
+| `show-hide-revisions.mac`| > This macro toggles revision marks. In the language of the Word UI, it's the equivalent of the following: **Review (tab)** > **Tracking** > [**All Markup**||**No Markup**] More info: [http://mikepope.com/blog/DisplayBlog.aspx?permalink=2407](http://mikepope.com/blog/DisplayBlog.aspx?permalink=2407)
 
 
 
