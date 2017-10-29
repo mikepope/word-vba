@@ -1,0 +1,23 @@
+Sub Hyperlinks_Remove_All()
+' Delete document hyperlinks
+    Dim oHLink As Hyperlink, i As Long
+
+    For i = ActiveDocument.Hyperlinks.Count To 1 Step -1
+        ActiveDocument.Hyperlinks(i).Delete
+    Next i
+
+End Sub
+
+Sub Hyperlinks_Unlink_Fields_All()
+' Unlink all document hyperlinks
+    Dim oField As Field
+
+    For Each oField In ActiveDocument.Fields
+        If oField.Type = wdFieldHyperlink Then
+            oField.Unlink
+        End If
+    Next
+
+    Set oField = Nothing
+
+End Sub
